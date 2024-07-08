@@ -4,7 +4,7 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     // Create an invisible anchor element
     var downloadLink = document.createElement('a');
     downloadLink.setAttribute('download', 'Dashrath Arvind Yadav'); // Specify file name
-    downloadLink.setAttribute('href', 'https://github.com/Dash9167/Dashrath-yadav-Portfolio/blob/main/Dashrath_Arvind_Yadav_Resume.pdf'); // Specify the path of the file
+    downloadLink.setAttribute('href', './images/Dashrath_Arvind_Yadav_Resume.pdf'); // Specify the path of the file
   
     // Append the anchor element to the body
     document.body.appendChild(downloadLink);
