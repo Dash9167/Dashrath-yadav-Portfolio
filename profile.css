@@ -16,6 +16,7 @@ body{
   position: fixed;
   z-index: 1000;  
 }
+
 .right{  
     display: inline;
 }
@@ -73,51 +74,41 @@ height: 80vh;
 .img img{
     height: 80%;
     width: 90%;
-    animation: myAnim 3s ease-in 01s 1 alternate forwards;
 }
-@keyframes myAnim {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateX(250px);
-	}
+@media (max-width:622px) {
 
-	38% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateX(0);
-	}
-
-	55% {
-		animation-timing-function: ease-in;
-		transform: translateX(68px);
-	}
-
-	72% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
-
-	81% {
-		animation-timing-function: ease-in;
-		transform: translateX(32px);
-	}
-
-	90% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
-
-	95% {
-		animation-timing-function: ease-in;
-		transform: translateX(8px);
-	}
-
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
+    #about-us{
+        
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  
+    }
+    .img img
+    {
+        height: 60%;
+        width: 60%;  
+    }
+    .heading{
+        margin: 5rem 0;
+        font-size: 15px;
+        font-weight: 300;
+        width: auto;
+        align-items: center;
+     
+    }
+    button{
+        padding: 5px 10px;
+        font-size: 10px;
+        margin-top: 1rem;
+        border-radius: 5px;
+        border: 2px solid white;
+       
+    
+    }
 }
+/* Media query for mobile devices */
+
 .services{
     height: 80vh;
     width: 100%;
@@ -232,10 +223,30 @@ background-color: antiquewhite;
 border-radius: 10px;
     
 }
-.about-me p{
+.about-me .p{
    
     margin: 10px;
     text-align: left;
+}
+@media (max-width:623px) {
+    .about-me .p{
+        
+    }
+    .about-me{
+        margin: 0px 20px;
+padding: 10px 17px;
+height: auto;
+
+    }
+    .services{
+        display: block;
+        height: auto;
+        padding: 10px;
+    }
+    .img-about{
+        margin: 0px 0px; 
+            flex-basis: 40%;
+        }
 }
 .sub-titles{
     display: flex;
@@ -286,9 +297,33 @@ border-radius: 10px;
     justify-content: space-around;
     color: aliceblue;
 }
+
+    @media (max-width: 600px) {
+        .contact-me {
+            height: auto; /* Reset height */
+            display: block; /* Display block is default, so this line is not necessary */
+            padding: 10px; /* Add padding for better spacing on smaller screens */
+        }
+        .row-1{
+            padding: 10px 20px;
+        }
+        .row-1 h1{
+            font-size: 20px;
+            margin-bottom: 0;
+            margin-top: -18px;
+        }
+        .row-2 {  
+           margin: 0px 15px;
+        }
+        .socail i{
+            font-size: 25px;
+    margin-top: 20px;
+   
+        }
+}
 .row-1{
     flex-basis: 30%;
-    margin: 5rem 5rem;
+    padding: 5rem 5rem;
 }
 .row-1 p{
     margin: 10px 0px;
@@ -386,6 +421,32 @@ padding: 10px 0;
     border-radius: 7px;
    transition: 1.3s;
 
+}
+@media (max-width:623px) {
+    .services-main{
+        height: auto;
+        padding: 10px;
+    }
+    .services-title{
+        padding: 10px;
+        
+     }
+     .services-content{
+        display: block;  
+        margin: 10px;    
+    }
+    .service-box{
+        border: 2px solid black;
+        padding: 20px;
+        margin: 20px;
+        width: auto;
+       
+        
+    
+    }
+    .ending{
+        display: none;
+    }
 }
 
 .service-box:hover{
